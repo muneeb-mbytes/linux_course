@@ -1,21 +1,33 @@
-name: CI Tests
+name: Keep draw.io export synchronized
 
-on: [push]
-
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "**.drawio"
+      - .github/workflows/drawio-export.yml
 jobs:
-  tests:
+  drawio-export:
     runs-on: ubuntu-latest
     steps:
-    - name: actions-drawio
-      # You may pin to the exact commit or the version.
-      # uses: Burnett01/actions-drawio@f1efda35d34c46033b55c9f3ae3c433ac6d79b81
-      uses: Burnett01/actions-drawio@1.2
-      with:
-        # Image quality for png|jpeg
-        quality: 100
-        # Scales the output file size for pixel-based output formats
-        scale: 1.0
-        # Input file
-        src: test/test.drawio
-        # Output file
-        dest: muneeb.png
+      - name: Checkout sources
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Export drawio files to asciidoctor and png files
+        uses: docker://rlespinasse/drawio-export:v3.x
+        with:
+          args: --fileext adoc --folder drawio-assets --transparent --on-changes
+
+      - name: Get author and committer info from HEAD commit
+        uses: rlespinasse/git-commit-data-action@v1.x
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v4.1.6
+        with:
+          commit_message: "docs: sync draw.io exported files"
+          commit_user_name: "${{ env.GIT_COMMIT_COMMITTER_NAME }}"
+          commit_user_email: "${{ env.GIT_COMMIT_COMMITTER_EMAIL }}"
+          commit_author: "${{ env.GIT_COMMIT_AUTHOR }}"
