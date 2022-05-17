@@ -16,6 +16,6 @@ jobs:
         # Scales the output file size for pixel-based output formats
         scale: 1.0
         # Input file
-        src: documents/images/drawio/first.xml
+        src: test/test.drawio
         # Output file
-        dest: documents/images/PNG/muneeb.drawio.png 
+        dest: muneeb.png
