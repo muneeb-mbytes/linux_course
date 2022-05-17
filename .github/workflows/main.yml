@@ -1,14 +1,21 @@
-steps:
-  - name: actions-drawio
-    # You may pin to the exact commit or the version.
-    # uses: Burnett01/actions-drawio@f1efda35d34c46033b55c9f3ae3c433ac6d79b81
-    uses: Burnett01/actions-drawio@1.2
-    with:
-      # Image quality for png|jpeg
-      quality: # optional, default is 100
-      # Scales the output file size for pixel-based output formats
-      scale: # optional, default is 1.0
-      # Input file
-      src: https://github.com/muneeb-mbytes/linux_course/blob/cd26e4cfad25125bbbd954546c49d6eb8c736bcd/documents/images/drawio/first.xml
-      # Output file
-      dest: https://github.com/muneeb-mbytes/linux_course/blob/cd26e4cfad25125bbbd954546c49d6eb8c736bcd/documents/images/PNG/muneeb.drawio.png 
+name: CI Tests
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: actions-drawio
+      # You may pin to the exact commit or the version.
+      # uses: Burnett01/actions-drawio@f1efda35d34c46033b55c9f3ae3c433ac6d79b81
+      uses: Burnett01/actions-drawio@1.2
+      with:
+        # Image quality for png|jpeg
+        quality: 100
+        # Scales the output file size for pixel-based output formats
+        scale: 1.0
+        # Input file
+        src: https://github.com/muneeb-mbytes/linux_course/blob/cd26e4cfad25125bbbd954546c49d6eb8c736bcd/documents/images/drawio/first.xml
+        # Output file
+        dest: https://github.com/muneeb-mbytes/linux_course/blob/cd26e4cfad25125bbbd954546c49d6eb8c736bcd/documents/images/PNG/muneeb.drawio.png 
