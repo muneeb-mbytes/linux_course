@@ -3,7 +3,7 @@ name: Keep draw.io export synchronized
 on:
   push:
     branches:
-      - master
+      - production
     paths:
       - "**.drawio"
       - .github/workflows/drawio-export.yml
