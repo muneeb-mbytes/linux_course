@@ -16,6 +16,6 @@ jobs:
         # Scales the output file size for pixel-based output formats
         scale: 1.0
         # Input file
-        src: https://github.com/muneeb-mbytes/linux_course/blob/cd26e4cfad25125bbbd954546c49d6eb8c736bcd/documents/images/drawio/first.xml
+        src: documents/images/drawio/first.xml
         # Output file
-        dest: https://github.com/muneeb-mbytes/linux_course/blob/cd26e4cfad25125bbbd954546c49d6eb8c736bcd/documents/images/PNG/muneeb.drawio.png 
+        dest: documents/images/PNG/muneeb.drawio.png 
