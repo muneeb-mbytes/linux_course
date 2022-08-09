@@ -2,6 +2,8 @@
 #
 # syntax : pwd (present working directory)
 #
+echo "${YELLOW}Your current position is"
 pwd
-
+echo "${NC}"
 # it will give your working directory path
+

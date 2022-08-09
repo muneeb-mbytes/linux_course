@@ -3,7 +3,11 @@
 #
 # syntax : mkdir -v dir_name
 #
+
+echo "${YELLOW}Creating mahadev directory(check verbosity message)${NC}"
+
  mkdir -v mahadev
 
 # this will create a directory name mahadev and gives a
 # verbosity message in terminal
+

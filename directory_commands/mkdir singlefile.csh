@@ -4,5 +4,4 @@
 #
 mkdir manipal_training
 
-# in present directory, manipal_training directory was created
-#
+echo "${YELLOW}Creating manipal_training directory ${NC}"

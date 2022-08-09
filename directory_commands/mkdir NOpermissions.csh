@@ -7,5 +7,5 @@ mkdir -m 777 group_siliconcrew
  
 # in your present directory group_siliconcrew directory was created ,
 #  this can be accesable to anyone .
-#
-#
+echo "${YELLOW} group_siliconcrew directory was created ,\n this can be accesable to anyone ${NC}"
+

@@ -10,3 +10,4 @@ rm -rf manipal_b5_dummy manipal_b6_dummy
 
 # this will deletes the both the directories 
 # Note : make sure before deleting, this can't be undo
+echo "${YELLOW}Deleting manipal_b5_dummy and manipal_b6_dummy both directories recursively ${NC}"

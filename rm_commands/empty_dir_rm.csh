@@ -6,3 +6,4 @@
 
 # this will delete linux_basics directory if doesn't have 
 # any files otherwise it won't delete .
+echo "${YELLOW}Trying to delete the empty directory linux_basics${NC}"
