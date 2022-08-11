@@ -10,7 +10,7 @@ clear
  setenv WORKING_PATH `pwd`
 # setenv PR_PATH 
 mkdir -p $WORKING_PATH/mkdir_practice
-cd $WORKING_PATH/mkdir_practice
+#cd $WORKING_PATH/mkdir_practice
 
 echo ""
 echo "${BLUE}Command: mkdir manipal_training ${NC}"
@@ -30,8 +30,21 @@ while ( !($usrip == ls) )
     end
 ls
 echo ""
-echo "${GREEN}Done ! Try creating one more directory with other name${NC}"
+echo "${GREEN}Done ! Try creating one more directory named 'my_dir'${NC}"
+while ( !("$usrip" == "mkdir my_dir") )
+  echo "${RED}create dir named my_dir ${NC}"
+  mkdir my_dir
+  set usrip = `head -1`
+end
+ echo "Try ls to check "
+set usrip = `head -1`
+
+ while ( !($usrip == ls) )
+ echo "${RED}Try ls ${NC}"
+ set usrip = `head -1`
+ end
+ls
 echo "For next variation press\
- ${BLUE}cd - (enter)${NC}\
+${BLUE}cd - (enter)${NC}\
  and source another"
  echo ""

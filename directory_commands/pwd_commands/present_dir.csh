@@ -1,27 +1,53 @@
-# This command is used for checking the path you where you present directory is exists.
+# This command is used for checking the path you where you are.
 #
 # syntax : pwd (present working directory)
-#
-echo "${YELLOW}Your current position is"
-pwd
-echo "${NC}"
-# it will give your working directory path
 
 #Clearing the screen
 clear
 
-# Getting the current working directory
-#  setenv WORKING_PATH `pwd`
-#
-#  mkdir $WORKING_PATH/manipal_training
-#  echo "${YELLOW}Creating manipal_training directory in $WORKING_PATH ${NC}"
-#
-#  echo "Try ls command to verify whether directory is created or not"
-#  set usrip = `head -1`
-#
-#  while ( !($usrip == ls) )#      echo "try ls"
-#      echo "try ls"
-          set usrip = `head -1`
-              end
-              ls
-              
+setenv WORKING_PATH `pwd`
+mkdir -p $WORKING_PATH/pwd_practice
+cd $WORKING_PATH/pwd_practice
+
+echo ""
+echo " ${BLUE}Command : pwd (present working directory) ${NC}"
+
+echo ""
+echo "${BLUE} Description : This command is used for checking the path you where you are${NC}"
+
+echo "" 
+echo "${BLUE} Expected Output: ${NC}"
+
+echo ""
+pwd
+
+echo ""
+echo "${BLUE}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo ""
+echo "\
+       ${GREEN}Please try the below command  \
+       pwd <enter> \
+       Compare your output  with the  expected output ${NC}"
+
+echo ""
+echo -n "${PURPLE}Enter Command ${NC}:"
+echo ""
+
+echo "Try pwd command to check the path"
+set usrip = `head -1`
+
+while ( !("$usrip" == "pwd") )
+echo "try pwd"
+ set usrip = `head -1`
+end
+pwd
+
+echo "${RED}--------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+
+echo ""
+echo "${PURPLE}Go back to directory,\
+where you clone the repository by using a command ${NC}"
+echo ""
+echo "${RED}cd - ${NC} "
+echo ""
+echo "${RED}------------------------------------------------------------------------------------------------------------------------------- ${NC}"
