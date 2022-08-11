@@ -41,28 +41,29 @@ echo -n "${PURPLE}Enter Command ${NC}:"
 echo ""
 set mainmenuinput = `head -1`
 #echo "print $mainmenuinput"
-if ($mainmenuinput == ls) then
-  echo "${RED}Actual Output:${NC}"
+if ("$mainmenuinput" == "ls") then
+  echo ""
+  echo "${GREEN}Actual Output:${NC}"
  echo ""
  ls
   else
     echo "${GREEN}Command wrong${NC}"
     endif
 
-
-
-
-echo "${RED}---------------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo ""
+echo ""
+echo "${RED}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
 
 echo ""
 
-echo "${PURPLE}Go back to directory,\
-where you clone the repository by using a command ${NC}"
+echo "${PURPLE}Good job!\
+Now try to learn next command (ls -a) ${NC}"
 echo ""
-echo "${RED}cd - ${NC} "
+echo "${RED}Go back usind command (cd - <Enter>)\
+Then source ls-a.csh${NC} "
 
 
 echo ""
-echo "${RED}------------------------------------------------------------------------------------------------    --------- ${NC}"
+
 
 
