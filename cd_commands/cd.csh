@@ -21,13 +21,11 @@ cd fruits
 echo ""
 echo $RED"This is the path where you will be when using cd fruits"$NC
 pwd
-echo ""
-#-----------------------
 cd $WORKING_PATH
 
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
-echo ""
+
 echo $GREEN"please enter the command" $PURPLE"cd fruits" $GREEN"<enter>"$NC
 echo ""
 
@@ -52,20 +50,15 @@ if("$userinput" == "cd fruits") then
     echo ""
     while (1)
       echo $GREEN"Entered wrong command:"$NC
-      echo $GREEN"Try entering $PURPLE cd fruits"$NC
+      echo $GREEN"Try entering" $PURPLE"cd fruits" $GREEN"<enter>"$NC
       echo ""
       goto come_here
     end
 endif
 
-endif
-
-echo ""
-
 echo $RED"--------------------------------------------------------------------------------------"\
 $NC
 
-echo ""
 echo $PURPLE"Now you have learnt all about cd command\
 and now you try doing remaining variations in cd."$NC
 echo ""

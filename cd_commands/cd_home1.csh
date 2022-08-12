@@ -13,7 +13,6 @@ This command is used for going back into home directory from any directory"$NC
 echo ""
 #-----------------------------------------------------------
 cd $WORKING_PATH/fruits/apple/banana
-
 echo $RED"Expected output:"$NC
 echo ""
 echo $RED"This is the path where you are currently in"$NC
@@ -25,8 +24,7 @@ pwd
 echo""
 
 cd $WORKING_PATH
-echo ""
-#-----------------------------------------------------------
+
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
 #-----------------------------------------------------------
@@ -44,16 +42,17 @@ if ("$userinput" == "cd") then
     cd $WORKING_PATH/fruits/apple/banana
     echo $GREEN"This is the path of the directory where you are currently in"$NC
     pwd
-    $userinput
     echo ""
+    $userinput
     echo $GREEN"This is the path where you are will be when using cd"$NC
     pwd
   else
     while(1)
       echo $GREEN"Actual output:"$NC
       echo ""
-      echo $GREEN"Entered the wrong command"\
-      "Try entering" $PURPLE"cd"$NC
+      echo $GREEN"Entered the wrong command"$NC
+      echo $GREEN"Try entering" $PURPLE"cd" $GREEN"<enter>"$NC
+      echo ""
       goto come_here
     end
 endif

@@ -24,7 +24,7 @@ pwd
 echo""
 
 cd $WORKING_PATH
-#----------------------------------------------------
+
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
 #----------------------------------------------------
@@ -46,14 +46,14 @@ if ("$userinput" == "cd $HOME") then
     pwd
     echo ""
     $userinput
-    echo $RED"This is the path of the directory where you will be in after using cd ~"$NC
+    echo $GREEN"This is the path of the directory where you will be in after using cd ~"$NC
     pwd
   else
     while(1)
       echo $GREEN"Actual output:"$NC
       echo ""
-      echo $GREEN"Entered the wrong command"\
-      "Try Entering" $PURPLE"<enter>"$NC
+      echo $GREEN"Entered the wrong command"$NC
+      echo $GREEN"Try Entering" $PURPLE"cd ~" $GREEN"<enter>"$NC
       goto come_here
     end
 endif
