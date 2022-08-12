@@ -1,74 +1,70 @@
 # This command is used to clear the screen
 clear
-
 # This is used to store the path of current directory into WORKING_PATH
 setenv WORKING_PATH `pwd`
-
 # This is used to create a new directories in your current path.
 mkdir -p $WORKING_PATH/fruits/apple/banana/
-
-echo "$RED Command: cd  $NC"
+#-----------------------------------------------------------
+echo $RED"Command: cd"$NC
 echo ""
-
-echo "$RED Description:\
- This command is used for going back into home directory from any directory $NC"
+#-----------------------------------------------------------
+echo $RED"Description:\
+This command is used for going back into home directory from any directory"$NC
 echo ""
-
+#-----------------------------------------------------------
 cd $WORKING_PATH/fruits/apple/banana
 
-echo "$RED This is the path where you are currently in $NC"
+echo $RED"Expected output:"$NC
 echo ""
+echo $RED"This is the path where you are currently in"$NC
 pwd
 echo ""
 cd 
-echo "$RED This is the path where you are will be when using cd  $NC"
-echo ""
+echo $RED"This is the path where you are will be when using cd"$NC
 pwd
 echo""
 
-echo "$RED Expected output: $NC"
-
 cd $WORKING_PATH
-
-echo""
-echo "$RED\
---------------------------------------------------------------------------------------------\
-$NC"
-
-echo "$GREEN please enter the command cd  below $NC"
 echo ""
-
-echo "$PURPLE Enter the command here: $NC"
+#-----------------------------------------------------------
+echo $RED"-------------------------------------------------------------------------------------"\
+$NC
+#-----------------------------------------------------------
+echo $GREEN"please enter the command" $PURPLE"cd" $GREEN"<enter>"$NC
 echo ""
-
+come_here:
+echo $PURPLE"Enter the command here:"$NC
+echo ""
 set userinput = `head -1`
 echo ""
 
-echo "$GREEN Actual output: $NC"
-echo ""
-
 if ("$userinput" == "cd") then
-  cd $WORKING_PATH/fruits/apple/banana
-  echo "$RED This is the path where you are currently in $NC"
-  echo ""
-  pwd
-  $userinput
-  echo ""
-  echo "$RED This is the path where you are will be when using cd  $NC"
-  echo ""
-  pwd
+    echo $GREEN"Actual output:"$NC
+    echo ""
+    cd $WORKING_PATH/fruits/apple/banana
+    echo $GREEN"This is the path of the directory where you are currently in"$NC
+    pwd
+    $userinput
+    echo ""
+    echo $GREEN"This is the path where you are will be when using cd"$NC
+    pwd
   else
-    echo "warning"
+    while(1)
+      echo $GREEN"Actual output:"$NC
+      echo ""
+      echo $GREEN"Entered the wrong command"\
+      "Try entering" $PURPLE"cd"$NC
+      goto come_here
+    end
 endif
 
-echo "$RED\
---------------------------------------------------------------------------------------------\
-$NC"
+echo $RED"-------------------------------------------------------------------------------------"\
+$NC
 
-echo "$PURPLE Now you have learnt all about cd  \
- and now you try doing remaining commands in cd $NC"
+echo $PURPLE"Now you have learnt all about cd  \
+and now you try doing remaining commands in cd"$NC
+echo ""
 
 cd $WORKING_PATH
-
 # This is for removing the created directories
 rm -rf fruits
