@@ -43,7 +43,9 @@ echo ""
 set mainmenuinput = `head -1`
 while ( !("$mainmenuinput" == "ls") )
   echo""
-      echo "${RED}Try ls ${NC}"
+      echo "${RED}Command wrong ${NC}"
+       echo ""
+       echo -n "${PURPLE}Enter Command ${NC}:"
       set mainmenuinput = `head -1`
       echo ""
       end
