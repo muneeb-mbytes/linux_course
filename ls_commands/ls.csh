@@ -7,6 +7,7 @@ setenv WORKING_PATH `pwd`
 # Creating the experiment folder for ls command
 mkdir -p $WORKING_PATH/experiment/ls
 
+
 cd $WORKING_PATH/experiment/ls
 ## # Creating certain files and folders
 mkdir -p dir1/ dir2
@@ -40,17 +41,15 @@ echo ""
 echo -n "${PURPLE}Enter Command ${NC}:"
 echo ""
 set mainmenuinput = `head -1`
-#echo "print $mainmenuinput"
-if ("$mainmenuinput" == "ls") then
-  echo ""
-  echo "${GREEN}Actual Output:${NC}"
+while ( !("$mainmenuinput" == "ls") )
+  echo""
+      echo "${RED}Try ls ${NC}"
+      set mainmenuinput = `head -1`
+      echo ""
+      end
+ echo "${GREEN}Actual Output:${NC}"
  echo ""
- ls
-  else
-    echo "${GREEN}Command wrong${NC}"
-    endif
-
-echo ""
+ls
 echo ""
 echo "${RED}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
 
@@ -59,9 +58,8 @@ echo ""
 echo "${PURPLE}Good job!\
 Now try to learn next command (ls -a) ${NC}"
 echo ""
-echo "${RED}Go back usind command (cd - <Enter>)\
-Then source ls-a.csh${NC} "
-
+echo "${RED}source ls-a.csh${NC} "
+cd -
 
 echo ""
 
