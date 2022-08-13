@@ -42,15 +42,17 @@ echo -n "${PURPLE}Enter Command ${NC}:"
 echo ""
 set mainmenuinput = `head -1`
 while ( !("$mainmenuinput" == "ls") )
-  echo""
-      echo "${RED}Command wrong ${NC}"
-       echo ""
-       echo -n "${PURPLE}Enter Command ${NC}:"
-      set mainmenuinput = `head -1`
-      echo ""
-      end
- echo "${GREEN}Actual Output:${NC}"
- echo ""
+echo""
+echo "${RED}Command typed is wrong ${NC}"
+echo ""
+echo -n "${PURPLE}Enter Command ${NC}:"
+echo ""
+set mainmenuinput = `head -1`
+echo ""
+end
+
+echo "${GREEN}Actual Output:${NC}"
+echo ""
 ls
 echo ""
 echo "${RED}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
