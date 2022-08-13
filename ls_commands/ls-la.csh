@@ -29,35 +29,32 @@ echo "${RED}--------------------------------------------------------------------
 echo ""
 echo "\
 ${GREEN}Please try the below command  \
-ls <enter> \
+ls -la <enter> \
 Compare your output  with the  expected output ${NC}"
 
- echo ""
- echo -n "${PURPLE}Enter Command ${NC}:"
- echo ""
-       set mainmenuinput = `head -1`
-#echo "print $mainmenuinput"
-       if ("$mainmenuinput" == "ls -la") then
-       echo "${RED}Actual Output:${NC}"
-       echo ""
-       ls -la
-       else
-       echo "${GREEN}Command wrong${NC}"
-       endif
+echo ""
+echo -n "${PURPLE}Enter Command:${NC}"
+echo ""
+set mainmenuinput = `head -1`
+echo""
+while ( !("$mainmenuinput" == "ls -la") )
+echo "${RED}Command typed is wrong${NC}"
+echo""
+echo -n "${PURPLE}Enter Command:${NC}"
+echo ""
+set mainmenuinput = `head -1`
 
-
-
-
-       echo "${RED}--------------------------------------------------------------------------------------------------------------------------------- ${NC}"
-
-       echo ""
-
-       echo "${PURPLE}Go back to directory,\
-         where you clone the repository by using a command ${NC}"
-         echo ""
-         echo "${RED}cd - ${NC} "
-
-
-         echo ""
-         echo "${RED}------------------------------------------------------------------------------------------------------------------------------- ${NC}"
-
+echo ""
+end
+echo "${GREEN}Actual Output:${NC}"
+echo ""
+ls -la
+echo ""
+echo "${RED}--------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo ""
+echo "${PURPLE}Good job!\
+Now try to learn next command (ls -lh) ${NC}"
+echo ""
+echo "${RED}Source ls-lh.csh${NC} "
+cd -
+echo ""

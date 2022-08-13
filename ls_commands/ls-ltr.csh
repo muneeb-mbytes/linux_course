@@ -28,36 +28,31 @@ echo "${RED}--------------------------------------------------------------------
 echo ""
 echo "\
 ${GREEN}Please try the below command  \
-ls <enter> \
- Compare your output  with the  expected output ${NC}"
-
+ls -ltr <enter> \
+Compare your output  with the  expected output ${NC}"
 echo ""
-       echo -n "${PURPLE}Enter Command ${NC}:"
-       echo ""
-       set mainmenuinput = `head -1`
-#echo "print $mainmenuinput"
-       if ("$mainmenuinput" == "ls -ltr") then
-       echo "${RED}Actual Output:${NC}"
-       echo ""
-       ls -ltr
-       else
-       echo "${GREEN}Command wrong${NC}"
-       endif
-
-
-
-
-       echo "${RED}--------------------------------------------------------------------------------------------------------------------------------- ${NC}"
-
-       echo ""
-
-       echo "${PURPLE}To go back to learn \
-         more other commands,Go to directory,\
-         where you clone the repository by using a command ${NC}"
-         echo ""
-         echo "${RED}cd -${NC} "
-
-
-         echo ""
-         echo "${RED}------------------------------------------------------------------------------------------------------------------------------- ${NC}"
-
+echo -n "${PURPLE}Enter Command:${NC}"
+echo ""
+set mainmenuinput = `head -1`
+while ( !("$mainmenuinput" == "ls -ltr") )
+echo""
+echo "${RED}Command typed is wrong ${NC}"
+echo ""
+echo -n "${PURPLE}Enter Command:${NC}"
+echo ""
+set mainmenuinput = `head -1`
+end
+echo ""
+echo "${GREEN}Actual Output:${NC}"
+echo ""
+ls -ltr
+echo ""
+echo ""
+echo "${RED}--------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo ""
+echo "${PURPLE}Good job!\
+Now try to learn next command (ls /) ${NC}"
+echo ""
+echo "${RED}Source ls_root.csh${NC} "
+cd -
+echo ""

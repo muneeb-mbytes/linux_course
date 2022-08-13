@@ -20,8 +20,6 @@ echo "${RED}Command: ls -r ${NC}"
 echo ""
 echo "${RED}Description: Display the list in  reversing order(alphabetical) ${NC}"
 echo ""
-
-
 echo "${RED}Expected Output: ${NC}"
 echo ""
 ls -r
@@ -30,37 +28,36 @@ echo "${RED}--------------------------------------------------------------------
 echo ""
 echo "\
 ${GREEN}Please try the below command  \
-ls <enter> \
+ls -r  <enter> \
 Compare your output  with the  expected output ${NC}"
+echo ""
+echo -n "${PURPLE}Enter Command:${NC}"
+echo ""
+set mainmenuinput = `head -1`
+while ( !("$mainmenuinput" == "ls -r") )
+echo""
+echo "${RED}Command typed is wrong ${NC}"
+echo ""
+echo -n "${PURPLE}Enter Command ${NC}:"
+echo ""
+set mainmenuinput = `head -1`
+echo ""
+end
+echo "${GREEN}Actual Output:${NC}"
+echo ""
+ls -r
+echo ""
+echo ""
+echo "${RED}---------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo ""
+echo "${PURPLE}Good job!\
+Now try to learn next command (ls -S) ${NC}"
+echo ""
+echo "${RED}Source ls-S.csh${NC} "
 
-       echo ""
-       echo -n "${PURPLE}Enter Command ${NC}:"
-       echo ""
-       set mainmenuinput = `head -1`
-#echo "print $mainmenuinput"
-       if ("$mainmenuinput" == "ls -r") then
-       echo "${RED}Actual Output:${NC}"
-       echo ""
-       ls -r
-       else
-       echo "${GREEN}Command wrong${NC}"
-       endif
-
-
-
-
-       echo "${RED}--------------------------------------------------------------------------------------------------------------------------------- ${NC}"
-
-       echo ""
-
-       echo "${PURPLE}TO go back to learn \
-         more other commands,Go to directory,\
-         where you clone the repository by using a command ${NC}"
-         echo ""
-         echo "${RED}cd -${NC} "
-
-
-         echo ""
-         echo "${RED}------------------------------------------------------------------------------------------------------------------------------- ${NC}"
-
-
+echo ""
+rm -rf dir_a
+rm -rf dir_b
+rm file.txt
+rm verilog.txt
+cd -

@@ -29,34 +29,31 @@ echo "${RED}--------------------------------------------------------------------
 echo ""
 echo "\
 ${GREEN}Please try the below command  \
-ls <enter> \
+ls -lh <enter> \
 Compare your output  with the  expected output ${NC}"
-
 echo ""
 echo -n "${PURPLE}Enter Command ${NC}:"
- echo ""
-       set mainmenuinput = `head -1`
-#echo "print $mainmenuinput"
-       if ("$mainmenuinput" == "ls -lh") then
-       echo "${RED}Actual Output:${NC}"
-       echo ""
-       ls -lh
-       else
-       echo "${GREEN}Command wrong${NC}"
-       endif
-
-
-
-
-       echo "${RED}--------------------------------------------------------------------------------------------------------------------------------- ${NC}"
-
-       echo ""
-
-       echo "${PURPLE}Go back to directory,\
-         where you clone the repository by using a command ${NC}"
-         echo ""
-         echo "${RED}cd - ${NC} "
-
-
-         echo ""
-         echo "${RED}------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo ""
+set mainmenuinput = `head -1`
+while ( !("$mainmenuinput" == "ls -lh") )
+echo""
+echo "${RED}Command typed is wrong ${NC}"
+echo ""
+echo -n "${PURPLE}Enter Command ${NC}:"
+echo ""
+set mainmenuinput = `head -1`
+echo ""
+end
+echo "${GREEN}Actual Output:${NC}"
+echo ""
+ls -lh
+echo ""
+echo""
+echo "${RED}--------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo ""
+echo "${PURPLE}Good job!\
+Now try to learn next command (ls -d */ ) ${NC}"
+echo ""
+echo "${RED}Source ls-d.csh${NC} "
+cd -
+echo ""
