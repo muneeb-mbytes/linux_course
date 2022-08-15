@@ -20,7 +20,7 @@ echo "${RED}Expected Output :${NC}"
 echo ""
 ls -d */
 echo ""
-echo "${RED}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo "${RED}---------------------------------------------------------------------------------------------------------------------------- ${NC}"
 echo ""
 echo "${GREEN}Please try the below command  \
 ls -d */ <enter> \
@@ -48,6 +48,6 @@ echo ""
 echo "${PURPLE}Good job!\
 Now try to learn next command (ls -R) ${NC}"
 echo ""
-echo "${RED}Source ls-R.csh${NC} "
+echo "${RED}source ls-R.csh${NC} "
 cd -
 echo ""

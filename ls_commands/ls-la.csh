@@ -11,6 +11,8 @@ cd $WORKING_PATH/experiment/ls
 mkdir -p dir1/ dir2
 touch file1.txt
 touch file2.txt
+cd $WORKING_PATH/experiment/ls/dir1
+ln -s /$WORKING_PATH/experiment/ link
 # ls -la command display the file or directories in a table format with extra information including hidden files or directories.
 
 echo ""
@@ -25,7 +27,7 @@ echo "${RED}Expectecd Output:${NC}"
 echo ""
 ls -la
 echo ""
-echo "${RED}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo "${RED}---------------------------------------------------------------------------------------------------------------------------- ${NC}"
 echo ""
 echo "\
 ${GREEN}Please try the below command  \
@@ -55,6 +57,12 @@ echo ""
 echo "${PURPLE}Good job!\
 Now try to learn next command (ls -lh) ${NC}"
 echo ""
-echo "${RED}Source ls-lh.csh${NC} "
-cd -
+echo "${RED}source ls-lh.csh${NC}"
+rm link
+cd ../
+cd ../
+cd ../
+
+
+
 echo ""
