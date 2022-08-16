@@ -24,7 +24,7 @@ echo "${RED}Expected Output: ${NC}"
 echo ""
 ls -r
 echo ""
-echo "${RED}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo "${RED}---------------------------------------------------------------------------------------------------------------------------- ${NC}"
 echo ""
 echo "\
 ${GREEN}Please try the below command  \
@@ -53,7 +53,7 @@ echo ""
 echo "${PURPLE}Good job!\
 Now try to learn next command (ls -S) ${NC}"
 echo ""
-echo "${RED}Source ls-S.csh${NC} "
+echo "${RED}source ls-S.csh${NC} "
 
 echo ""
 rm -rf dir_a

@@ -25,7 +25,7 @@ echo "${RED}Expected Output: ${NC}"
 echo ""
 ls -a
 echo ""
-echo "${RED}--------------------------------------------------------------------------------------------------------------------------------------- ${NC}"
+echo "${RED}---------------------------------------------------------------------------------------------------------------------------- ${NC}"
 echo ""
 
 echo "${GREEN}Please try the below command  \
@@ -55,7 +55,7 @@ echo ""
 echo "${PURPLE}Good job!\
 Now try to learn next command (ls *) ${NC}"
 echo ""
-echo "${RED}Source ls_all.csh${NC} "
+echo "${RED}source ls_all.csh${NC} "
 cd -
 
 echo ""
