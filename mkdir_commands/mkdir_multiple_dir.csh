@@ -25,7 +25,7 @@ echo "${GREEN}Try ls command to verify whether directories were created or not.\
 ls <enter>\
 Compare your output with the expected output${NC}"
 echo ""
-
+echo "Actual output:"
 echo -n "${PURPLE}Enter Command : ${NC}"
 set userinput = `head -1`
 while ( !("$userinput" == "ls") )
@@ -47,7 +47,7 @@ Try creating two directories named 'student1' and 'student2'${NC}"
 echo ""
 echo -n "${BROWN}Enter Command 'mkdir student1 student2 <enter>': ${NC}"
 set userinput = `head -1`
-while ( !("$userinput" == "mkdir linux_dir") )
+while ( !("$userinput" == "mkdir student1 student2") )
  echo ""
  echo "${RED}Wrong Command ${NC}"
   echo -n "${BROWN}Enter Command 'mkdir student1 student2 <enter>': ${NC}"
@@ -74,4 +74,4 @@ echo "${PURPLE}For next variation source another file${NC}"
 echo ""
 
 rm -rf student1 student2 
-cd ..
+cd $WORKING_PATH

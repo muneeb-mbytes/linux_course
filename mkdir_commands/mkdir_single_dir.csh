@@ -27,6 +27,7 @@ Compare your output with the expected output${NC}"
 echo ""
 
 
+eco "Actual output:"
 echo -n "${PURPLE}Enter Command : ${NC}"
 set userinput = `head -1`
 while ( !("$userinput" == "ls") )

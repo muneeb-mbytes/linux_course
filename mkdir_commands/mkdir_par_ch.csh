@@ -28,7 +28,7 @@ ls <enter>\
 Compare your output with the expected output${NC}"
 echo ""
 
-
+echo "Actual output:"
 echo -n "${PURPLE}Enter Command : ${NC}"
 set userinput = `head -1`
 while ( !("$userinput" == "ls") )
@@ -55,7 +55,7 @@ set userinput = `head -1`
 while ( !("$userinput" == "mkdir -p bangalore mangalore/manipal") )
  echo ""
  echo "${RED}Wrong Command ${NC}"
-  echo -n "${BROWN}Enter Command 'mkdir bangalore mangalore/manipal<enter>': ${NC}"
+  echo -n "${BROWN}Enter Command 'mkdir -p bangalore mangalore/manipal<enter>': ${NC}"
   set userinput = `head -1`
 end
 echo""

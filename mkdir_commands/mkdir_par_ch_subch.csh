@@ -15,7 +15,7 @@ echo "${RED}Description: This command is for creating\
 multiple directories with an hierarchy of parent which\
 has child dir and again child dir has sub-child in it${NC}"
 echo ""
-mkdir $WORKING_PATH/experiment/India/Karnataka/Manipal
+mkdir -p $WORKING_PATH/experiment/India/Karnataka/Manipal
 cd $WORKING_PATH/experiment/
 echo "${RED}Expected output: ${NC}"
 echo ""
@@ -29,6 +29,7 @@ Compare your output with the expected output${NC}"
 echo ""
 
 
+echo "Actual output:"
 echo -n "${PURPLE}Enter Command : ${NC}"
 set userinput = `head -1`
 while ( !("$userinput" == "ls") )
@@ -60,7 +61,7 @@ while ( !("$userinput" == "mkdir -p mangalore/udupi/manipal") )
   set userinput = `head -1`
 end
 echo""
-mkdir mangalore/udupi/manipal
+mkdir -p mangalore/udupi/manipal
 echo "${RED}--------------------------------------------------------------------------------${NC}"
 echo "${PURPLE}Try ls command to check ${NC}"
 echo ""
