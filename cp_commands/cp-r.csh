@@ -93,5 +93,6 @@ Now try to learn other commands${NC}"
 rm -rf dir3/
 echo ""
 cd -
+cd ../../..
 echo ""
 
