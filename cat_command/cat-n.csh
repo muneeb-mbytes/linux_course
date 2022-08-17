@@ -13,6 +13,10 @@ mkdir -p dir1/dir2
 touch file1.txt
 touch file2.txt
 
+echo "TEAM_KACHORI" >> file1.txt
+echo "TEAM_SILICON_CREW" >> file1.txt
+echo "TEAM_BJT" >> file1.txt
+echo "manipal" >> file1.txt
 echo ""
 echo " ${RED}Enter command : cat -n file1.txt ${NC}"
 echo ""
@@ -49,3 +53,4 @@ echo "${PURPLE} GOOD JOB!\
 echo ""        
 echo ""
 cd -
+rm -rf experiment
