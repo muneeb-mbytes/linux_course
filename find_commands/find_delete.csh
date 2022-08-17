@@ -26,15 +26,17 @@ echo $RED"These are the files and directories present in comb directory"$NC
 cd $WORKING_PATH/comb/
 ls
 echo ""
-find -name "file2.txt" -exec rm -f {};
+find -name "file2.txt" -exec rm -rf {} \;
 echo $RED"These are the files and directories present after deleting in comb directory"$NC
 ls
 cd $WORKING_PATH
+touch $WORKING_PATH/comb/file2.txt
 
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
 
-echo $GREEN"please enter the command" $PURPLE"find -name "'"file2.txt"'" -exec rm -f {}" \
+echo ""
+echo $GREEN"please enter the command" $PURPLE"find -name "'"file2.txt"'" -exec rm -rf {} \;" \
 $GREEN"<enter>"$NC
 echo ""
 
@@ -44,21 +46,24 @@ echo ""
 set userinput = `head -1`
 echo ""
 
-if("$userinput" == "find -name "'"file2.txt"'" -exec rm -f {}") then
+if("$userinput" == "find -name "'"file2.txt"'" -exec rm -rf {} \;") then
     echo $GREEN"Actual output:"$NC
     echo ""
     cd $WORKING_PATH/comb/
     echo $GREEN"These are the files and directories present your comb directory"$NC
     ls
-    cd $WORKING_PATH
     echo ""
-    $userinput
+    find -name "file2.txt" -exec rm -rf {} \;
+    echo $RED"These are the files and directories present after deleting in comb directory"$NC
+    ls
+    cd $WORKING_PATH
   else
     echo $GREEN"Actual output:"$NC
     echo ""
     while (1)
       echo $GREEN"Entered wrong command:"$NC
-      echo $GREEN"Try entering" $PURPLE"find -name file2.txt -exec rm -f {} \;" $GREEN"<enter>"$NC
+      echo $GREEN"Try entering" $PURPLE"find -name "'"file2.txt"'" -exec rm -rf {} \;"\
+      $GREEN"<enter>"$NC
       echo ""
       goto come_here
     end

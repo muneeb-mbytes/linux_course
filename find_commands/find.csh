@@ -32,6 +32,7 @@ echo $RED"----------------------------------------------------------------------
 $NC
 echo ""
 
+echo ""
 echo $GREEN"please enter the command" $PURPLE"find -name state" $GREEN"<enter>"$NC
 echo ""
 

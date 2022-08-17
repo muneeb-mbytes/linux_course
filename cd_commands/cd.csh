@@ -23,7 +23,7 @@ echo $RED"This is the path where you will be when using cd fruits"$NC
 pwd
 cd $WORKING_PATH
 
-echo $RED"-------------------------------------------------------------------------------------"\
+echo $RED"------------------------------------------------------------------------------------"\
 $NC
 
 echo $GREEN"please enter the command" $PURPLE"cd fruits" $GREEN"<enter>"$NC
@@ -56,7 +56,7 @@ else
     end
 endif
 
-echo $RED"--------------------------------------------------------------------------------------"\
+echo $RED"------------------------------------------------------------------------------------"\
 $NC
 
 echo $PURPLE"Now you have learnt all about cd command \
