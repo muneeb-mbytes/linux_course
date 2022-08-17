@@ -2,7 +2,6 @@
 clear
 # this is used to show the working path
 setenv WORKING_PATH `pwd`
-history -c
 #---------------------------------------------------------
 echo $RED"Command: history"$NC
 echo ""
