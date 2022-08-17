@@ -21,14 +21,12 @@ echo "tulip" >> file3.txt
 echo "lily" >> file3.txt
 echo "daisy" >> file3.txt
 echo "canna" >> file3.txt
-
 #--------------------------------------------------------------------------
 
 echo $RED"Command: head -q  file2.txt"$NC
 echo ""
 
-echo $RED"Description:\
-print the contents of each file without the file names"$NC
+echo $RED"Description: print the contents of each file without the file names"$NC
 echo ""
 
 echo $RED"Expected output:"$NC
@@ -36,31 +34,29 @@ echo ""
 
 head -q file2.txt file3.txt
 
-echo "$RED\
---------------------------------------------------------------------------------------------\
+echo "$RED------------------------------------------------------------------------------------\
 $NC"
 
-echo $GREEN"please enter the command head -q  file2.txt file3.txt  below"$NC
+echo $GREEN"please enter the command" $PURPLE"head -q  file2.txt file3.txt" $GREEN"<enter>"$NC
 echo ""
 echo $PURPLE"Enter the command here:"$NC
 echo ""
  
- set userinput = `head -1`
- echo ""
+set userinput = `head -1`
+echo ""
 
- if ("$userinput" == "head -q file2.txt file3.txt") then
- $userinput
-          
- else
- echo "warning"
- endif
+if ("$userinput" == "head -q file2.txt file3.txt") then
+    $userinput
+else
+    echo "warning"
+endif
 
- echo "$RED\
- --------------------------------------------------------------------------------------------\
+echo "$RED-------------------------------------------------------------------------------------\
  $NC"
 
- echo $PURPLE "Now you have learnt all about head -q filename\
- and now you try doing remaining commands in head" $NC
- cd $WORKING_PATH
+echo $PURPLE "Now you have learnt all about head -q filename\
+and now you try doing remaining commands in head" $NC
+
+cd $WORKING_PATH
 rm -rf file2.txt
 rm -rf file3.txt

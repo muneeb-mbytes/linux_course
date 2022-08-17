@@ -5,6 +5,8 @@ setenv WORKING_PATH `pwd`
 #This is used to create a new directories in your current path.
 mkdir -p $WORKING_PATH/
 #-------------------------------------------------------------------------------------
+rm -rf file.txt
+rm -rf file1.txt
 echo " List of states:" >>file.txt
 echo "Andhra Pradesh" >> file.txt
 echo "Tamilnadu" >>file.txt
@@ -33,11 +35,11 @@ echo "orchid" >> file1.txt
 echo "Rose" >> file1.txt
 echo "lily" >> file1.txt
 echo "lavender" >> file1.txt
+#----------------------------------------------------------------
 echo $RED"Command: head file.txt file1.txt"$NC
 echo ""
 
-echo $RED"Description:\
-print the first 10 lines of each file"$NC
+echo $RED"Description: print the first 10 lines of each file"$NC
 echo ""
 
 echo $RED"Expected output:"$NC
@@ -45,8 +47,7 @@ echo ""
 
 head file.txt file1.txt
 
-echo "$RED\
---------------------------------------------------------------------------------------------\
+echo "$RED--------------------------------------------------------------------------------------\
 $NC"
 
 echo $GREEN"please enter the command head file.txt file1.txt below"$NC
@@ -55,21 +56,20 @@ echo ""
 echo $PURPLE"Enter the command here:"$NC
 echo ""
  
- set userinput = `head -1`
- echo ""
- if ("$userinput" == "head file.txt file1.txt") then
- $userinput
- else
- echo "warning"
- endif
+set userinput = `head -1`
+echo ""
 
- echo "$RED\
- --------------------------------------------------------------------------------------------\
- $NC"
+if ("$userinput" == "head file.txt file1.txt") then
+    $userinput
+else
+    echo "warning"
+endif
 
- echo "$PURPLE Now you have learnt all about head file1 file2 \
- and now you try doing remaining commands in head $NC"
+echo "$RED-----------------------------------------------------------------------------------$NC"
 
- cd $WORKING_PATH
- rm -rf file.txt
- rm -rf file1.txt
+echo "$PURPLE Now you have learnt all about head file1 file2 \
+and now you try doing remaining commands in head $NC"
+
+cd $WORKING_PATH
+rm -rf file.txt
+rm -rf file1.txt

@@ -11,3 +11,33 @@ LOtus
 Lily
 waterlily
 Jasmine
+ List of states:
+Andhra Pradesh
+Tamilnadu
+Karnataka
+Uttar Pradesh
+Telangana
+Delhi
+Kerala
+Oddisa
+West Bengal
+Maharastra
+Madhya Pradesh
+Goa
+Rajasthan
+Punjab
+ List of states:
+Andhra Pradesh
+Tamilnadu
+Karnataka
+Uttar Pradesh
+Telangana
+Delhi
+Kerala
+Oddisa
+West Bengal
+Maharastra
+Madhya Pradesh
+Goa
+Rajasthan
+Punjab

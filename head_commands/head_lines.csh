@@ -6,6 +6,7 @@ setenv WORKING_PATH `pwd`
 #mkdir -p $WORKING_PATH
 cd $WORKING_PATH
 #----------------------------------------------------------------------------------------
+rm -rf file1.txt
 echo "Tulips" >> file1.txt
 echo "Rose" >> file1.txt
 echo "Lily" >> file1.txt
@@ -37,29 +38,27 @@ echo "$RED\
 --------------------------------------------------------------------------------------------\
 $NC"
 
-echo $GREEN"please enter the command $PURPLE"head -n8 file1.txt $GREEN"below"$NC
+echo $GREEN"please enter the command" $PURPLE"head -n8 file1.txt" $GREEN"below"$NC
 echo ""
 
 echo $PURPLE"Enter the command here:"$NC
 echo ""
  
- set userinput = `head -1`
+set userinput = `head -1`
 
 echo ""
 
- if ("$userinput" == "head -n8 file1.txt") then
- $userinput
+if ("$userinput" == "head -n8 file1.txt") then
+    $userinput
+else
+    echo "warning"
+endif
 
- else
- echo "warning"
- endif
+echo "$RED--------------------------------------------------------------------------------------\
+$NC"
 
- echo "$RED\
- --------------------------------------------------------------------------------------------\
- $NC"
+echo "$PURPLE Now you have learnt all about head -n filename \
+and now you try doing remaining commands in head $NC"
 
- echo "$PURPLE Now you have learnt all about head -n filename \
- and now you try doing remaining commands in head $NC"
-
- cd $WORKING_PATH
- rm -rf file1.txt
+cd $WORKING_PATH
+rm -rf file1.txt

@@ -17,34 +17,29 @@ echo ""
 
 head -v file.txt
 
-echo "$RED\
---------------------------------------------------------------------------------------------\
+echo "$RED--------------------------------------------------------------------------------------\
 $NC"
 
-echo $GREEN"please enter the command"$PURPLE head -v file.txt"$GREEN below"$NC
+echo $GREEN"please enter the command" $PURPLE"head -v file.txt" $GREEN"<enter>"$NC
 echo ""
 
 echo $PURPLE"Enter the command here: "$NC
 echo ""
  
- set userinput = `head -1`
- echo ""
+set userinput = `head -1`
+echo ""
 
- if ("$userinput" == "head -v file.txt") then
-    
-      
- $userinput
-            
- else
- echo "warning"
- endif
+if ("$userinput" == "head -v file.txt") then
+  $userinput
+else
+  echo "warning"
+endif
 
- echo "$RED\
- --------------------------------------------------------------------------------------------\
- $NC"
+echo "$RED--------------------------------------------------------------------------------------\
+$NC"
 
- echo "$PURPLE Now you have learnt all about head -v filename \
- and now you try doing remaining commands in head $NC"
+echo "$PURPLE Now you have learnt all about head -v filename \
+and now you try doing remaining commands in head $NC"
 
- cd $WORKING_PATH
- rm -rf file.txt
+cd $WORKING_PATH
+rm -rf file.txt
