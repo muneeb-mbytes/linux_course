@@ -56,10 +56,10 @@ if("$userinput" == "cd fruits") then
     end
 endif
 
-echo $RED"--------------------------------------------------------------------------------------"\
+echo $RED"  --------------------------------------------------------------------------------------"\
 $NC
 
-echo $PURPLE"Now you have learnt all about cd command\
+echo $PURPLE"Now you have learnt all about cd command \
 and now you try doing remaining variations in cd."$NC
 echo ""
 
