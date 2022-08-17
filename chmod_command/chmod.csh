@@ -2,13 +2,13 @@
 #
 # syntax : chmod 777 directoryname
 #
-#Clearing the screen
-clear
 # Getting the current working directory
 setenv WORKING_PATH `pwd`
 mkdir -p $WORKING_PATH/experiment
 cd $WORKING_PATH/experiment/
 
+#Clearing the screen
+clear
 echo ""
 echo "${RED}Command: chmod 777 directory_name ${NC}"
 echo ""
@@ -37,8 +37,8 @@ while ( !("$userinput" == "ls") )
 end
 echo ""
 ls
-echo"${GREEN}Compare your output with the expected output observe\
-greenbackground of dir_name which indicates permissions\
+echo "${GREEN} Compare your output with the expected output observe\
+green background of dir_name which indicates permissions\
 granted for everyone${NC}"
 echo ""
 echo "${RED}--------------------------------------------------------------------------------${NC}"
@@ -57,7 +57,8 @@ while ( !("$userinput" == "mkdir grant_dir") )
 end
 echo""
 mkdir -p grant_dir
-echo "\n grant_dir created, give permissions using chmod"
+echo "\n ${GREEN}grant_dir created, give permissions using chmod"
+echo "enter chmod command to give permissions as mentioned in syntax${NC}"
 set userinput = `head -1`
 while ( !("$userinput" == "chmod 777 grant_dir") )
  echo ""

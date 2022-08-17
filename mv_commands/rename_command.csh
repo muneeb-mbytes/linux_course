@@ -84,17 +84,6 @@ end
 echo "${BROWN}after rename :${NC}"
 ls
 echo ""
-echo -n "${PURPLE}Enter ls Command : ${NC}"
-set userinput = `head -1`
-
-while ( !("$userinput" == "ls") )
-  echo ""
-  echo "${RED}Try ls ${NC}"
-  echo ""
-  echo -n "${PURPLE}Enter Command 'ls<enter>': ${NC}"
-  set userinput = `head -1`
-end
-ls
 echo "${PURPLE}For next variation source another file${NC}"
 echo ""
 cd $WORKING_PATH

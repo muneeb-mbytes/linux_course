@@ -2,13 +2,13 @@
 
 # syntax : mv old_path new_path
 
+# Getting the current working directory
+ setenv WORKING_PATH `pwd`
+ 
 mkdir -p $WORKING_PATH/mv_experiment
 mkdir $WORKING_PATH/mv_experiment/manipal_training
 #Clearing the screen
 clear
-# Getting the current working directory
- setenv WORKING_PATH `pwd`
- 
 
 echo ""
 echo "${RED}Command : mv source_path destination_path ${NC}"
