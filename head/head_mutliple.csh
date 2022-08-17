@@ -37,7 +37,7 @@ echo "$RED Command: head file.txt file1.txt $NC"
 echo ""
 
 echo "$RED Description:\
-print the first NUM bytes of each file $NC"
+print the first 10 lines of each file $NC"
 echo ""
 
 echo "$RED Expected output: $NC"
