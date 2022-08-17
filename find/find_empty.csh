@@ -26,6 +26,7 @@ echo $RED"These are the files and directories present in comb directory"$NC
 cd $WORKING_PATH/comb/
 ls
 cd $WORKING_PATH
+echo ""
 find -empty
 
 echo $RED"-------------------------------------------------------------------------------------"\

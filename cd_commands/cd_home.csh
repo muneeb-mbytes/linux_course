@@ -13,7 +13,7 @@ This command is used for going back into home directory from any directory"$NC
 echo ""
 #----------------------------------------------------
 cd $WORKING_PATH/fruits/apple/banana
-echo "$RED Expected output: $NC"
+echo $RED"Expected output:"$NC
 echo""
 echo $RED"This is the path of the directory where you are currently in"$NC
 pwd

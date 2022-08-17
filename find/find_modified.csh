@@ -27,12 +27,14 @@ echo $RED"These are the files and directories present in comb directory"$NC
 cd $WORKING_PATH/comb/
 ls
 cd $WORKING_PATH
-find -mtime 5
+echo ""
+find -mtime -5
 
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
 
-echo $GREEN"please enter the command" $PURPLE"find -mtime 5" $GREEN"<enter>"$NC
+echo ""
+echo $GREEN"please enter the command" $PURPLE"find -mtime -5" $GREEN"<enter>"$NC
 echo ""
 
 come_here:
@@ -41,7 +43,7 @@ echo ""
 set userinput = `head -1`
 echo ""
 
-if("$userinput" == "find -mtime 5") then
+if("$userinput" == "find -mtime -5") then
     echo $GREEN"Actual output:"$NC
     echo ""
     cd $WORKING_PATH/comb/
@@ -55,7 +57,7 @@ if("$userinput" == "find -mtime 5") then
     echo ""
     while (1)
       echo $GREEN"Entered wrong command:"$NC
-      echo $GREEN"Try entering" $PURPLE"find -mtime 5" $GREEN"<enter>"$NC
+      echo $GREEN"Try entering" $PURPLE"find -mtime -5" $GREEN"<enter>"$NC
       echo ""
       goto come_here
     end

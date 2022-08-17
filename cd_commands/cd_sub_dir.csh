@@ -3,6 +3,7 @@ clear
 # This is used to store the path of current directory into WORKING_PATH
 setenv WORKING_PATH `pwd`
 # This is used to create a new directories in your current path.
+rm -rf fruits
 mkdir -p $WORKING_PATH/fruits/apple/banana/
 #----------------------------------------------------------------
 echo $RED"Command: cd directory1/directory2"$NC
@@ -41,8 +42,8 @@ if ("$userinput" == "cd fruits/apple/banana") then
     pwd
     echo ""
     $userinput
-    echo $GREEN"\
-    This is the path of the directory where you will be in after using cd fruits/apple/banana"$NC
+    echo $GREEN"This is the path of the directory where you will be in"$NC
+    echo $GREEN"after using cd fruits/apple/banana"$NC
     pwd
   else
     while(1)

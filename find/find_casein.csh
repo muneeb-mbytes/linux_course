@@ -15,10 +15,10 @@ mkdir -p $WORKING_PATH/comb/country
 mkdir -p $WORKING_PATH/comb/STATE
 mkdir -p $WORKING_PATH/comb/district
 #--------------------------------------------------------------------------------------------
-echo $RED"Command: find -iname [what_to_find]"$NC
+echo $RED"Command: find -iname [file_or_directory]"$NC
 echo ""
-echo $RED"Description:\ 
-This command is used to find the files and directories irrespective of the case"$NC
+echo $RED"Description: \
+This command is used to find the files and directories irrespective of the text case"$NC
 echo ""
 echo $RED"Expected output:"$NC
 echo ""
@@ -27,11 +27,13 @@ echo $RED"These are the files and directories present in comb directory"$NC
 cd $WORKING_PATH/comb/
 ls
 cd $WORKING_PATH
+echo ""
 find -iname state
 
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
 
+echo ""
 echo $GREEN"please enter the command" $PURPLE"find -iname state" $GREEN"<enter>"$NC
 echo ""
 
