@@ -103,7 +103,7 @@ setenv WORKING_PATH `pwd`
           goto come_here_cd_h
         end
       endif
-``````#---------------------------------------------
+     #---------------------------------------------
     else
       while(1)
         echo $GREEN "enter wrong command :"$NC

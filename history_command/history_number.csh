@@ -4,7 +4,7 @@ clear
 setenv WORKING_PATH `pwd`
 
  #---------------------------------------------------------
- echo $RED   "Command: history 5"$NC
+ echo $RED"Command: history 5"$NC
  echo ""
  echo $RED"Discription :This command is used for showing the proviously 5 executed commands."$NC
  echo ""
@@ -26,7 +26,6 @@ setenv WORKING_PATH `pwd`
   echo ""
  #-----------------------------------------
   if ("$userinput_p" == "pwd")then
-#-------------------------------------------------------
     $userinput_p
     echo ""
     echo $GREEN "please enter the command"$PURPLE "cd ~"$NC
@@ -38,7 +37,6 @@ setenv WORKING_PATH `pwd`
      echo ""       
    #---------------------------------------
    if ("$userinput_cd_h" == "cd $HOME")then
-  #--------------------------------------------------
      $userinput_cd_h
       echo ""
       echo $GREEN "please enter the command"$PURPLE "cd -"$NC
@@ -50,7 +48,6 @@ setenv WORKING_PATH `pwd`
       echo ""
  #---------------------------------------
     if ("$userinput_cd_j" == "cd -")then
-     #--------------------------------------------------------------
      $userinput_cd_j
      echo $GREEN"please enter the command" $PURPLE"ls"$NC
      echo ""
@@ -61,7 +58,6 @@ setenv WORKING_PATH `pwd`
       echo ""
   #-------------------------------------------------------------------
       if ("$userinput_l" == "ls")then
-      #------------------------------------
       $userinput_l
        echo ""
        echo $GREEN "please enter the command" $PURPLE" history 5 "$NC
