@@ -32,10 +32,10 @@ setenv WORKING_PATH `pwd`
   if ("$userinput_l" == "ls")then
     $userinput_l
     echo ""
-    echo $GREEN "please enter the command" $PURPLE "pwd"$NC
+    echo $GREEN"please enter the command" $PURPLE "pwd"$NC
     echo ""
     come_here_p:
-    echo $PURPLE "Enter the command here :" $NC
+    echo $PURPLE"Enter the command here :" $NC
     echo ""
     set userinput_p = `head -1`
     echo ""
@@ -43,10 +43,10 @@ setenv WORKING_PATH `pwd`
     if ("$userinput_p" == "pwd")then
       $userinput_p
       echo ""
-      echo $GREEN "please enter the command" $PURPLE " cd ~"$NC
+      echo $GREEN"please enter the command" $PURPLE " cd ~"$NC
       echo ""
       come_here_cd_h:
-      echo $PURPLE "Enter the command here :" $NC
+      echo $PURPLE"Enter the command here :" $NC
       echo ""
       set userinput_cd_h = `head -1`
       echo ""       
@@ -54,10 +54,10 @@ setenv WORKING_PATH `pwd`
       if ("$userinput_cd_h" == "cd $HOME")then
         $userinput_cd_h
         echo ""
-        echo $GREEN "please enter the command" $PURPLE"cd -"$NC
+        echo $GREEN"please enter the command" $PURPLE"cd -"$NC
         echo ""
         come_here_cd_j:
-        echo $PURPLE "Enter the command here :" $NC
+        echo $PURPLE"Enter the command here :" $NC
         echo ""
         set userinput_cd_j = `head -1`
         echo ""
@@ -65,10 +65,10 @@ setenv WORKING_PATH `pwd`
         if ("$userinput_cd_j" == "cd -")then
           $userinput_cd_j
           echo ""
-          echo  $GREEN "please enter the command" $PURPLE"history -c"$NC
+          echo  $GREEN"please enter the command" $PURPLE"history -c"$NC
           echo ""
           come_here_h:
-          echo $PURPLE "Enter the command here :" $NC
+          echo $PURPLE"Enter the command here :" $NC
           echo ""
           set userinput_h = `head -1`
           echo ""
@@ -76,11 +76,10 @@ setenv WORKING_PATH `pwd`
           if ("$userinput_h" == "history -c")then
             $userinput_h
             echo ""
-            goto come
           else
             while(1)
-              echo $GREEN "enter wrong command:"$NC
-              echo $GREEN "Try entering" $PURPLE "history -c" $GREEN "<enter>"$NC
+              echo $GREEN"enter wrong command:"$NC
+              echo $GREEN"Try entering" $PURPLE "history -c" $GREEN "<enter>"$NC
               echo""
               goto come_here_h
             end
@@ -88,8 +87,8 @@ setenv WORKING_PATH `pwd`
           #-------------------------------------
         else
           while(1)
-            echo $GREEN "enter wrong command:"$NC
-            echo $GREEN "Try entering" $PURPLE "cd -" $GREEN "<enter>"$NC
+            echo $GREEN"enter wrong command:"$NC
+            echo $GREEN"Try entering" $PURPLE "cd -" $GREEN "<enter>"$NC
             echo ""
             goto come_here_cd_j
           end
@@ -97,8 +96,8 @@ setenv WORKING_PATH `pwd`
         #-------------------------------------------------------------
       else
         while(1)
-          echo $GREEN "enter wrong command:"$NC
-          echo $GREEN "Try entering" $PURPLE "cd ~" $GREEN "<enter>"$NC
+          echo $GREEN"enter wrong command:"$NC
+          echo $GREEN"Try entering" $PURPLE "cd ~" $GREEN "<enter>"$NC
           echo""
           goto come_here_cd_h
         end
@@ -106,8 +105,8 @@ setenv WORKING_PATH `pwd`
      #---------------------------------------------
     else
       while(1)
-        echo $GREEN "enter wrong command :"$NC
-        echo $GREEN "Try entering" $PURPLE "pwd" $GREEN "<enter>"$NC
+        echo $GREEN"enter wrong command :"$NC
+        echo $GREEN"Try entering" $PURPLE "pwd" $GREEN "<enter>"$NC
         echo ""
         goto come_here_p
       end
@@ -115,14 +114,17 @@ setenv WORKING_PATH `pwd`
     #-------------------------------------------------
   else
     while(1)
-      echo $GREEN "enter wrong command :"$NC
-      echo $GREEN "Try entering" $PURPLE "ls" $GREEN "<enter>"$NC
+      echo $GREEN"enter wrong command :"$NC
+      echo $GREEN"Try entering" $PURPLE "ls" $GREEN "<enter>"$NC
       echo ""
       goto come_here_l
     end
   endif
-  #----------------------------------------------
+  
+echo $RED"-----------------------------------------------------"$NC
 
-come:
+echo $RED"Now you have done doing history -c command \
+let's try the remaining commands in history"$NC
+
 cd $WORKING_PATH
 
