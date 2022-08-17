@@ -30,6 +30,7 @@ find -name state
 
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
+echo ""
 
 echo $GREEN"please enter the command" $PURPLE"find -name state" $GREEN"<enter>"$NC
 echo ""
@@ -59,7 +60,7 @@ if("$userinput" == "find -name state") then
       goto come_here
     end
 endif
-
+ echo ""
 echo $RED"  --------------------------------------------------------------------------------------"\
 $NC
 

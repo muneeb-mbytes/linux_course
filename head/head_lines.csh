@@ -22,14 +22,13 @@ echo "Poppy" >> file1.txt
 echo "datura" >> file1.txt
 echo "Bluebell" >> file1.txt
 #-----------------------------------------------------------------------------------------
-echo "$RED Command: head -n <number> file1.txt $NC"
+echo $RED"Command: head -n <number> file1.txt"$NC
 echo ""
 
-echo "$RED Description:\
-print the mentioned number of contents $NC"
+echo $RED"Description:print the mentioned number of contents"$NC
 echo ""
 
-echo "$RED Expected output: $NC"
+echo $RED"Expected output:"$NC
 echo ""
 
 head -n8 file1.txt
@@ -38,10 +37,10 @@ echo "$RED\
 --------------------------------------------------------------------------------------------\
 $NC"
 
-echo "$GREEN please enter the command "$PURPLE head -n8 file1.txt "$GREEN below  $NC"
+echo $GREEN"please enter the command $PURPLE"head -n8 file1.txt $GREEN"below"$NC
 echo ""
 
-echo "$PURPLE Enter the command here: $NC"
+echo $PURPLE"Enter the command here:"$NC
 echo ""
  
  set userinput = `head -1`

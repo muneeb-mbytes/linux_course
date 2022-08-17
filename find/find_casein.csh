@@ -16,9 +16,9 @@ mkdir -p $WORKING_PATH/comb/STATE
 mkdir -p $WORKING_PATH/comb/district
 #--------------------------------------------------------------------------------------------
 echo $RED"Command: find -iname [what_to_find]"$NC
-echo ""
-echo $RED"Description:\ 
-This command is used to find the files and directories irrespective of the case"$NC
+echo " "
+echo $RED"Description:"$NC
+echo $RED"This command is used to find the files and directories irrespective of the case"$NC
 echo ""
 echo $RED"Expected output:"$NC
 echo ""
@@ -61,7 +61,8 @@ if("$userinput" == "find -iname state") then
     end
 endif
 
-echo $RED"  --------------------------------------------------------------------------------------"\
+echo $RED"\
+--------------------------------------------------------------------------------------"\
 $NC
 
 echo $PURPLE"Now you have learnt all about find case insensitive command \

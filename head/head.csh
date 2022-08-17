@@ -5,14 +5,15 @@ setenv WORKING_PATH `pwd`
 #This is used to create a new directories in your current path.
 mkdir -p $WORKING_PATH
 
-echo "$RED Command: head file.txt $NC"
+echo $RED"Command: head file.txt"$NC
+
 echo ""
 
-echo "$RED Description:\
-print the first 10 lines of the file defaultly $NC"
+echo $RED"Description:\
+print the first 10 lines of the file defaultly"$NC
 echo ""
 
-echo "$RED Expected output: $NC"
+echo $RED"Expected output:"$NC
 echo ""
 
 head file.txt
@@ -21,10 +22,10 @@ echo "$RED\
 --------------------------------------------------------------------------------------------\
 $NC"
 
-echo "$GREEN please enter the command "$PURPLE head file.txt "$GREEN below $NC"
+echo $GREEN"please enter the command $PURPLE"head file.txt $GREEN"below"$NC
 echo ""
 
-echo "$PURPLE Enter the command here: $NC"
+echo $PURPLE"Enter the command here:"$NC
 echo ""
  
  set userinput = `head -1`

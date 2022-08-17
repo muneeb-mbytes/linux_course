@@ -24,14 +24,14 @@ echo "canna" >> file3.txt
 
 #--------------------------------------------------------------------------
 
-echo "$RED Command: head -q  file2.txt $NC"
+echo $RED"Command: head -q  file2.txt"$NC
 echo ""
 
-echo "$RED Description:\
-print the first NUM bytes of each file $NC"
+echo $RED"Description:\
+print the contents of each file without the file names"$NC
 echo ""
 
-echo "$RED Expected output: $NC"
+echo $RED"Expected output:"$NC
 echo ""
 
 head -q file2.txt file3.txt
@@ -40,9 +40,9 @@ echo "$RED\
 --------------------------------------------------------------------------------------------\
 $NC"
 
-echo "$GREEN please enter the command head -q  file2.txt file3.txt  below $NC"
+echo $GREEN"please enter the command head -q  file2.txt file3.txt  below"$NC
 echo ""
-echo "$PURPLE Enter the command here: $NC"
+echo $PURPLE"Enter the command here:"$NC
 echo ""
  
  set userinput = `head -1`

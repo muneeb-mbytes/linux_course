@@ -67,8 +67,8 @@ if("$userinput" == "printenv sample") then
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
 
-echo $PURPLE"Now you have learnt all about cd command \
-and now you try doing remaining variations in cd."$NC
+echo $PURPLE"Now you have learnt all about printenv command \
+and now you try doing remaining variations in printenv "$NC
 echo ""
 
 cd $WORKING_PATH

@@ -37,6 +37,7 @@ if("$userinput" == "setenv sample '10'") then
   #echo $userinput
   setenv sample '10'
   come_here_2:
+  echo $GREEN"Please enter the command" $PURPLE""'$sample'"" $GREEN"<enter>"$NC
   echo $PURPLE"Enter the command here:"$NC
   echo ""
   set userinput1 = `head -1`
@@ -68,11 +69,12 @@ endif
 
 
 
-echo $RED"-------------------------------------------------------------------------------------"\
+echo $RED"\
+-------------------------------------------------------------------------------------"\
 $NC
 
-echo $PURPLE"Now you have learnt all about cd command \
-and now you try doing remaining variations in cd."$NC
+echo $PURPLE"Now you have learnt all about setenv command \
+and now you try doing remaining variations in setenv "$NC
 echo ""
 
 cd $WORKING_PATH

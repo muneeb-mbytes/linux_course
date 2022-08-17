@@ -32,7 +32,7 @@ find -name "*.txt"
 
 echo $RED"-------------------------------------------------------------------------------------"\
 $NC
-
+echo ""
 echo $GREEN"please enter the command" $PURPLE"find -name "'"*.txt"'"" $GREEN"<enter>"$NC
 echo ""
 
@@ -61,7 +61,7 @@ if("$userinput" == "find -name "'"*.txt"'"") then
       goto come_here
     end
 endif
-
+echo ""
 echo $RED"  --------------------------------------------------------------------------------------"\
 $NC
 

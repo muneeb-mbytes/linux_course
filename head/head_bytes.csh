@@ -31,14 +31,14 @@ echo "Assam" >> file.txt
 echo "Mizoram" >> file.txt
 echo "Arunachal Pradesh" >> file.txt
 #-----------------------------------------------------------------------------
-echo "$RED Command: head -c <number> file_name $NC"
+echo $RED"Command:head -c <number> file_name"$NC
 echo ""
 
-echo "$RED Description: \
-print the number of characters which equals to the bytes mentioned in a file $NC"
+echo $RED"Description: \
+print the number of characters which equals to the bytes mentioned in a file"$NC
 echo ""
 
-echo "$RED Expected output: $NC"
+echo $RED"Expected output:"$NC
 echo ""
 head -c 60 file.txt
 echo "$RED\
@@ -48,7 +48,8 @@ $NC"
 echo $GREEN"please enter the command" $PURPLE"head -c 60 file.txt" $GREEN"<enter>"$NC
 echo ""
 
-echo "$PURPLE Enter the command here: $NC"
+echo $PURPLE"Enter the command here:"$NC
+
 echo ""
  
 set userinput = `head -1`
@@ -62,6 +63,7 @@ if ("$userinput" == "head -c 60 file.txt") then
     echo "warning"
 endif
 
+ echo ""
 echo "$RED\
 --------------------------------------------------------------------------------------------\
 $NC"
@@ -69,4 +71,4 @@ $NC"
 echo "$PURPLE Now you have learnt all about head -c filename \
 and now you try doing remaining commands in head $NC"
 
-cd $WORKING_PATH
+icd $WORKING_PATH

@@ -33,14 +33,14 @@ echo "orchid" >> file1.txt
 echo "Rose" >> file1.txt
 echo "lily" >> file1.txt
 echo "lavender" >> file1.txt
-echo "$RED Command: head file.txt file1.txt $NC"
+echo $RED"Command: head file.txt file1.txt"$NC
 echo ""
 
-echo "$RED Description:\
-print the first 10 lines of each file $NC"
+echo $RED"Description:\
+print the first 10 lines of each file"$NC
 echo ""
 
-echo "$RED Expected output: $NC"
+echo $RED"Expected output:"$NC
 echo ""
 
 head file.txt file1.txt
@@ -49,10 +49,10 @@ echo "$RED\
 --------------------------------------------------------------------------------------------\
 $NC"
 
-echo "$GREEN please enter the command head file.txt file1.txt below $NC"
+echo $GREEN"please enter the command head file.txt file1.txt below"$NC
 echo ""
 
-echo "$PURPLE Enter the command here: $NC"
+echo $PURPLE"Enter the command here:"$NC
 echo ""
  
  set userinput = `head -1`

@@ -6,14 +6,13 @@ setenv WORKING_PATH `pwd`
 #mkdir -p $WORKING_PATH/
 cd $WORKING_PATH
 
-echo "$RED Command: head -v  file.txt $NC"
+echo $RED"Command:head -v  file.txt"$NC
 echo ""
 
-echo "$RED Description:\
-Display the content with filename $NC"
+echo $RED"Description:Display the content with filename"$NC
 echo ""
 
-echo "$RED Expected output: $NC"
+echo $RED"Expected output: "$NC
 echo ""
 
 head -v file.txt
@@ -22,10 +21,10 @@ echo "$RED\
 --------------------------------------------------------------------------------------------\
 $NC"
 
-echo "$GREEN please enter the command "$PURPLE  head -v file.txt "$GREEN below $NC"
+echo $GREEN"please enter the command"$PURPLE head -v file.txt"$GREEN below"$NC
 echo ""
 
-echo "$PURPLE Enter the command here: $NC"
+echo $PURPLE"Enter the command here: "$NC
 echo ""
  
  set userinput = `head -1`
