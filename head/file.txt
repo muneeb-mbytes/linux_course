@@ -1,0 +1,62 @@
+Flowers:
+Rose
+hibiscus
+cosmos
+canna
+Jasmine
+Dahila
+daisy
+Daffodil
+LOtus
+Lily
+waterlily
+Jasmine
+
+List of states:
+Andhra Pradesh
+Tamilnadu
+Karnataka
+Uttar Pradesh
+Telengana
+Delhi
+Kerala
+Oddisa
+West Bengal
+Maharastra
+Madhya Pradesh
+Goa
+Rajasthan
+Punjab
+Harayana
+Gujarath
+Himachal Pradesh
+Bihar
+Jharkhand
+Chhattisgarh
+Assam
+Mizoram
+Arunachal Pradesh
+List of states:
+Andhra Pradesh
+Tamilnadu
+Karnataka
+Uttar Pradesh
+Telengana
+Delhi
+Kerala
+Oddisa
+West Bengal
+Maharastra
+Madhya Pradesh
+Goa
+Rajasthan
+Punjab
+Harayana
+Gujarath
+Himachal Pradesh
+Bihar
+Jharkhand
+Chhattisgarh
+Assam
+Mizoram
+Arunachal Pradesh
