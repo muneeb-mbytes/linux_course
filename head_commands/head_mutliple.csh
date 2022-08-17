@@ -50,9 +50,9 @@ head file.txt file1.txt
 echo "$RED--------------------------------------------------------------------------------------\
 $NC"
 
-echo $GREEN"please enter the command head file.txt file1.txt below"$NC
+echo $GREEN"please enter the command" $PURPLE"head file.txt file1.txt" $GREEN"<below>"$NC
 echo ""
-
+come_here:
 echo $PURPLE"Enter the command here:"$NC
 echo ""
  
@@ -60,9 +60,18 @@ set userinput = `head -1`
 echo ""
 
 if ("$userinput" == "head file.txt file1.txt") then
+    echo $GREEN"Actual output:"$NC
+    echo ""
     $userinput
 else
-    echo "warning"
+    echo $GREEN"Actual output:"$NC
+    echo ""
+    while (1)
+      echo $GREEN"Entered wrong command:"$NC
+      echo $GREEN"Try entering" $PURPLE"head file.txt file1.txt" $GREEN"<enter>"$NC
+      echo ""
+      goto come_here
+    end
 endif
 
 echo "$RED-----------------------------------------------------------------------------------$NC"
