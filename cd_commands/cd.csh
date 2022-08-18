@@ -45,7 +45,7 @@ if("$userinput" == "cd fruits") then
     $userinput
     echo $GREEN"This is the path where you will be when using cd fruits"$NC
     pwd
-  else
+else
     echo $GREEN"Actual output:"$NC
     echo ""
     while (1)
@@ -56,7 +56,7 @@ if("$userinput" == "cd fruits") then
     end
 endif
 
-echo $RED"  --------------------------------------------------------------------------------------"\
+echo $RED"--------------------------------------------------------------------------------------"\
 $NC
 
 echo $PURPLE"Now you have learnt all about cd command \
