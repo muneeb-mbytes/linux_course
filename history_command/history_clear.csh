@@ -121,8 +121,11 @@ setenv WORKING_PATH `pwd`
       goto come_here_l
     end
   endif
-  #----------------------------------------------
+  
+echo $RED"-----------------------------------------------------"$NC
 
-come:
+echo $RED"Now you have done doing history -c command \
+let's try the remaining commands in history"$NC
+
 cd $WORKING_PATH
 
