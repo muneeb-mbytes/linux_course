@@ -76,7 +76,6 @@ setenv WORKING_PATH `pwd`
           if ("$userinput_h" == "history -c")then
             $userinput_h
             echo ""
-            goto come
           else
             while(1)
               echo $GREEN"enter wrong command:"$NC
