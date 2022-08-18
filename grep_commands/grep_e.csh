@@ -59,7 +59,7 @@ echo ""
 echo "Actual output:"
 echo -n "${PURPLE}Enter Command : ${NC}"
 set userinput = `head -1`
-while ( !("$userinput" == "grep -e beach -e restaurant places_bangalore.txt ") )
+while ( !("$userinput" == "grep -e beach -e restaurant places_bangalore.txt") )
    echo ""
    echo "Actual output:"
     echo "${RED}Wrong! Try Again${NC}"

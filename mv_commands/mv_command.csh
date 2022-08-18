@@ -115,4 +115,5 @@ ls
 echo "${PURPLE}For next variation source another file${NC}"
 echo ""
 cd $WORKING_PATH
+rm -f file2.sv
 rm -rf mv_experiment
