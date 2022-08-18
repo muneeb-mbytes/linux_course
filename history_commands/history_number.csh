@@ -4,26 +4,27 @@ clear
 setenv WORKING_PATH `pwd`
 
  #---------------------------------------------------------
- echo $RED"Command: history 5"$NC
- echo ""
- echo $RED"Discription :This command is used for showing the proviously 5 executed commands."$NC
- echo ""
- echo $RED"expected output :" $NC
- echo ""
- history 5
+echo $RED"Command: history 5"$NC
+echo ""
+echo $RED"Discription :This command is used for showing the proviously 5 executed commands."$NC
+echo ""
+echo $RED"expected output :" $NC
+echo ""
 
- echo $RED"-------------------------------------------------------------------"$NC
+history 5
+
+echo $RED"-------------------------------------------------------------------"$NC
  
- echo ""
- #------------------------------------------------------------
- echo ""
- echo $GREEN"please enter the command" $PURPLE "pwd"$NC
- echo ""
- come_here_p:
- echo $PURPLE"Enter the command here :" $NC
- echo ""
- set userinput_p = `head -1`
- echo ""
+echo ""
+#------------------------------------------------------------
+echo ""
+echo $GREEN"please enter the command" $PURPLE "pwd"$NC
+echo ""
+come_here_p:
+echo $PURPLE"Enter the command here :" $NC
+echo ""
+set userinput_p = `head -1`
+echo ""
  #-----------------------------------------
  if ("$userinput_p" == "pwd")then
    $userinput_p
@@ -114,7 +115,7 @@ setenv WORKING_PATH `pwd`
  
  echo $RED"-----------------------------------------------------------------------------"$NC
  
- echo $GREEN"you have learnt about history 5 command \
+echo $GREEN"you have learnt about history 5 command \
 Now let's go and check what are the usefull variations in history"$NC
  
- cd $WORKING_PATH
+cd $WORKING_PATH

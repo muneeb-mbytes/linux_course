@@ -3,31 +3,31 @@ clear
 # this is used to show the working path
 setenv WORKING_PATH `pwd`
 
- #---------------------------------------------------------
- echo $RED"Command: history -c"$NC
- echo ""
- echo $RED"Discription :This command is used for remove the all commands from history."$NC
- echo ""
- echo $RED"expected output :" $NC
- echo ""
- echo "history"
- history
- echo ""
+#---------------------------------------------------------
+echo $RED"Command: history -c"$NC
+echo ""
+echo $RED"Discription :This command is used for remove the all commands from history."$NC
+echo ""
+echo $RED"expected output :" $NC
+echo ""
+echo "history"
+history
+echo ""
 # echo "history -c"
 # history -c
- echo ""
+echo ""
 
- echo $RED"-------------------------------------------------------------------"$NC
- 
- echo ""
- #------------------------------------------------------------
- echo $GREEN"please enter the command" $PURPLE"ls"$NC
- echo ""
- come_here_l:
- echo $PURPLE"Enter the command here :"$NC
- echo ""
- set userinput_l = `head -1`
- echo ""
+echo $RED"-------------------------------------------------------------------"$NC
+
+echo ""
+#------------------------------------------------------------
+echo $GREEN"please enter the command" $PURPLE"ls"$NC
+echo ""
+come_here_l:
+echo $PURPLE"Enter the command here :"$NC
+echo ""
+set userinput_l = `head -1`
+echo ""
   #-----------------------------------------------------
   if ("$userinput_l" == "ls")then
     $userinput_l
