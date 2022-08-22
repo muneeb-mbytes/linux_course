@@ -6,7 +6,14 @@ This project is about the linux commands .  In this  course, we include frequent
 For giving the user practical knowledge in this course for  each command , the screenshots ,gifs ,lablinks  and cheat sheet are attached. 
 This project's home page has included the index of commands so that user can easily go that particular page where user want to go . 
 
-# Lab links execution process -
+# Documentation 
+
+click the below link to start your linux course  
+https://github.com/muneeb-mbytes/linux_course/wiki  
+
+This Home page includes Introduction to Linux and the cheatsheet for most frequently used commands in linux were mentioned . For learning a command click on the command in cheatseet which will be directed to detailed explanation and its variations .
+
+# Lab links execution process :
 The lab links execution is for the practical purpose . Below there are the easy steps for how to execute the lab links . 
  Steps for lab execution-
  1. Go to your CLI system . Log in to the CLI system .
