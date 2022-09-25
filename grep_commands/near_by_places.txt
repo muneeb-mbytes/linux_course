@@ -1,0 +1,13 @@
+
+Temple                      Murdeshwar
+tourist_place               Kundadri
+beach                       Malpe
+restaurant                  pai tiffins
+Temple                      Udupi Krishna math
+tourist_place               Yana
+beach                       Padubidri
+restaurant                  KMC Food court
+Temple                      Dharmasthala
+beach                       Kapu
+tourist_place               Jog Falls
+restaurant                  Rajasthani_Ghar

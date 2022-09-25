@@ -31,7 +31,7 @@ ls
 echo ""
 echo "${RED}--------------------------------------------------------------------------------${NC}"
 echo ""
-echo "${GREEN}Try ls command to verify whether directory is deleted or not.\
+echo "${GREEN}Try ls command to verify whether files were deleted or not.\
 ls <enter>\
 Compare your output with the expected output${NC}"
 echo ""
@@ -55,12 +55,12 @@ echo "${RED}--------------------------------------------------------------------
 echo ""
 touch file4.c file5.txt file6.csh
 echo "${PURPLE}Good Job !\
-created two more files for you named file4.c & file5.txt Try removing both files 'file3.v' & 'file4.c'${NC}"
+created two more files for you named file4.c & file5.txt Try removing both files 'file4.c' & 'file5.txt'${NC}"
 echo ""
-echo -n "${BROWN}before rm :${NC}"
+echo -n "${RED}before rm :${NC}"
 ls
 echo ""
-echo -n "${BROWN}Enter Command 'rm -f file4.c file5.txt <enter>': ${NC}"
+echo -n "${RED}Enter Command 'rm -f file4.c file5.txt <enter>': ${NC}"
 set userinput = `head -1`
 while ( !("$userinput" == "rm -f file4.c file5.txt") )
  echo ""
@@ -83,7 +83,7 @@ while ( !("$userinput" == "ls") )
   echo -n "${PURPLE}Enter Command 'ls<enter>': ${NC}"
   set userinput = `head -1`
 end
-echo "${BROWN}after rm :${NC}"
+echo "${RED}after rm :${NC}"
 ls
 echo ""
 echo "${PURPLE}For next variation source another file${NC}"

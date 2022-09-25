@@ -7,42 +7,19 @@ clear
 # Getting the current working directory
  setenv WORKING_PATH `pwd`
  
-mkdir -p $WORKING_PATH/grep_experiment
-
 echo ""
 echo "${RED}Command: grep -e string1 -e string2 file_name${NC}"
 echo ""
 echo "${RED}Description: This command is to used to search\
 multiple patterns in a single file${NC}"
 echo ""
-cd $WORKING_PATH/grep_experiment/
 echo "${RED}Expected output: ${NC}"
 echo ""
-touch places_bangalore.txt
-echo "${BLUE}Type_of_place               Name_of_place${NC}" >> places_bangalore.txt
-echo "Temple                      Murdeshwar" >> places_bangalore.txt
-echo "tourist_place               Kundadri" >> places_bangalore.txt
-echo "beach                       Malpe" >> places_bangalore.txt
-echo "restaurant                  pai tiffins" >> places_bangalore.txt
-echo "Temple                      Udupi Krishna math" >> places_bangalore.txt
-echo "tourist_place               Yana" >> places_bangalore.txt
-echo "beach                       Padubidri" >> places_bangalore.txt
-echo "restaurant                  KMC Food court" >> places_bangalore.txt
-echo "Temple                      Dharmasthala" >> places_bangalore.txt
-echo "beach                       Kapu" >> places_bangalore.txt
-echo "tourist_place               Jog Falls" >> places_bangalore.txt
-echo "restaurant                  Rajasthani_Ghar" >> places_bangalore.txt
-touch places_hyderabad.txt
-echo "${BLUE}Type_of_place               Name_of_place${NC}" >> places_hyderabad.txt
-echo "tourist_place               Charminar" >> places_hyderabad.txt
-echo "restaurant                  Bawarchi" >> places_hyderabad.txt
-echo "tourist_place               Golconda" >> places_hyderabad.txt
-echo "restaurant                  subbaya gari hotel" >> places_hyderabad.txt
-echo "tourist_place               Ananthagiri hills" >> places_hyderabad.txt
-echo "restaurant                  Paradise" >> places_hyderabad.txt
 echo "${PURPLE}places_bangalore Contents:${NC}"
+echo "${BLUE}Type_of_place               Name_of_place${NC}"
 cat places_bangalore.txt
 echo "${PURPLE}places_hyderabad Contents:${NC}"
+echo "${BLUE}Type_of_place               Name_of_place${NC}"
 cat places_hyderabad.txt
 
 echo "Expected output :(for grep beach & restaurant)"
@@ -79,4 +56,3 @@ echo ""
 
 cd $WORKING_PATH
 
-rm -rf grep_experiment

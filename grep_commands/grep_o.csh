@@ -7,8 +7,6 @@
 clear 
 # Getting the current working directory
  setenv WORKING_PATH `pwd`
- 
-mkdir -p $WORKING_PATH/grep_experiment
 
 echo ""
 echo "${RED}Command: grep -o string filename${NC}"
@@ -17,23 +15,8 @@ echo "${RED}Description: This command is to used to searches a file for a\
 particular pattern of characters, and displays\
 the only matched string or pattern${NC}"
 echo ""
-cd $WORKING_PATH/grep_experiment/
-echo ""
-touch near_by_places.txt
-echo "${BLUE}Type_of_place               Name_of_place${NC}" >> near_by_places.txt
-echo "Temple                      Murdeshwar" >> near_by_places.txt
-echo "tourist_place               Kundadri" >> near_by_places.txt
-echo "beach                       Malpe" >> near_by_places.txt
-echo "restaurant                  pai tiffins" >> near_by_places.txt
-echo "Temple                      Udupi Krishna math" >> near_by_places.txt
-echo "tourist_place               Yana" >> near_by_places.txt
-echo "beach                       Padubidri" >> near_by_places.txt
-echo "restaurant                  KMC Food court" >> near_by_places.txt
-echo "Temple                      Dharmasthala" >> near_by_places.txt
-echo "beach                       Kapu" >> near_by_places.txt
-echo "tourist_place               Jog Falls" >> near_by_places.txt
-echo "restaurant                  Rajasthani_Ghar" >> near_by_places.txt
 echo "${PURPLE}near_by_places.txt Contents:${NC}"
+echo "${BLUE}Type_of_place               Name_of_place${NC}"
 cat near_by_places.txt
 echo "Expected output :(for grep tourist_place)"
 echo "${GREEN}"
@@ -69,4 +52,3 @@ echo ""
 
 cd $WORKING_PATH
 
-rm -rf grep_experiment

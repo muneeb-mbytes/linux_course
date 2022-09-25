@@ -8,16 +8,14 @@ clear
 # Getting the current working directory
  setenv WORKING_PATH `pwd`
  
-mkdir -p $WORKING_PATH/grep_experiment
-
 echo ""
 echo "${RED}Command: grep -r string irectory_name${NC}"
 echo ""
 echo "${RED}Description: This command is to used to search an entire dir for a\
 particular pattern of characters, and displays\
 the files the pattern paresents${NC}"
-mkdir $WORKING_PATH/grep_experiment/grep_dir
-cd $WORKING_PATH/grep_experiment/grep_dir
+mkdir $WORKING_PATH/grep_dir
+cd $WORKING_PATH/grep_dir
 echo ""
 touch places_bangalore.txt
 echo "${BLUE}Type_of_place               Name_of_place${NC}" >> places_bangalore.txt
@@ -42,6 +40,7 @@ echo "restaurant                  subbaya gari hotel" >> places_hyderabad.txt
 echo "tourist_place               Ananthagiri hills" >> places_hyderabad.txt
 echo "restaurant                  Paradise" >> places_hyderabad.txt
 touch places_chennai.txt
+echo "${BLUE}Type_of_place               Name_of_place${NC}" >> places_chennai.txt
 echo "beach                       Marina" >> places_chennai.txt
 echo "Temple                      Vellore" >> places_chennai.txt
 echo "beach                       ECR Beach" >> places_chennai.txt
@@ -88,5 +87,3 @@ source another files for different options${NC}"
 echo ""
 
 cd $WORKING_PATH
-
-rm -rf grep_experiment

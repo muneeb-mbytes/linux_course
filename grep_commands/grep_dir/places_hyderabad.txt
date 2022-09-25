@@ -1,0 +1,7 @@
+[0;34mType_of_place               Name_of_place[0m
+tourist_place               Charminar
+restaurant                  Bawarchi
+tourist_place               Golconda
+restaurant                  subbaya gari hotel
+tourist_place               Ananthagiri hills
+restaurant                  Paradise
